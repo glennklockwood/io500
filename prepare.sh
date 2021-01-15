@@ -66,7 +66,7 @@ function get_pfind {
 function build_ior {
   pushd $BUILD/ior
   ./bootstrap
-  ./configure --prefix=$INSTALL_DIR
+  ./configure --prefix=$INSTALL_DIR --without-gpfs
   cd src
   $MAKE clean
   $MAKE install

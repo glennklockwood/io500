@@ -1,5 +1,5 @@
-CC = mpicc
-CFLAGS += -std=gnu99 -Wall -Wempty-body -Werror -Wstrict-prototypes -Werror=maybe-uninitialized -Warray-bounds
+CC = cc
+CFLAGS += -std=gnu99
 
 IORCFLAGS = $(shell grep CFLAGS ./build/ior/Makefile | cut -d "=" -f 2-)
 CFLAGS += -g3 -lefence -I./include/ -I./src/ -I./build/pfind/src/ -I./build/ior/src/
